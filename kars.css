@@ -1,0 +1,243 @@
+ body{
+    margin:0;
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #ffd89b, #19547b); 
+
+  }
+  body::after{
+    content: '';
+    display: block !important;
+    height: 120px !important;
+  }
+  #searching{
+  
+  width: 100%;
+  background-image: url("m1.jpg");
+  padding: 6%;
+  background-repeat: none;
+
+
+}
+
+ 
+  
+  #side-data{
+  
+  margin-left: 2%;
+  width: 200px;
+
+}
+#hotel-data{
+  background: red;
+}
+.radio-inline{
+  padding: 2%;
+  margin-left: 9%;
+}
+#fam{
+margin-left: 9%;
+}
+#budget,#ratings,#inclusion{
+  
+  padding: 4%;
+}
+.close{
+  color: black;
+  z-index: -999;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#ripple-loader{
+  top: 50%;
+  left: 50%;
+  position: relative;
+  margin-top: 20%;
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#ripple-loader:before{
+  content:'Loading Hotels..';
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7em;
+  margin: 38% 0% 0% 14%;
+  color: black;
+}
+
+#ripple-loader:after{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #0EC198;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  -webkit-animation: ripple 1.5s ease-out infinite;
+  -moz-animation: ripple 1.5s ease-out infinite;
+  -ms-animation: ripple 1.5s ease-out infinite;
+  -o-animation: ripple 1.5s ease-out infinite;
+  animation: ripple 1.5s ease-out infinite;
+}
+
+@keyframes ripple{
+  0%{
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  }
+  96%{
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+  }
+  100%{
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+  }
+}
+.checked {
+    color: orange;
+}
+ input:checked  {
+    background-color: #2196F3;
+}
+
+del
+{
+    color: red;
+}
+
+        input[type=button]
+        {
+            margin-left: 680px;
+            padding: 5px 5px 5px 5px;
+            font-family: Arial;
+             background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+
+        }
+        input[type=button]:hover
+        {
+            margin-left: 680px;
+            padding: 5px 5px 5px 5px;
+            font-family: Arial;
+            background-color: white;
+            color: red;
+
+        }
+        .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.cardmain
+{
+  height: 200px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: #fff;
+  border-radius: 7px;
+  transition: transform 0.2s;
+}
+.cardmain:hover
+{
+  transform: scale(1.01);
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+  .imaag {
+    
+    width: 100%;
+    float: left;
+  }
+  #avail
+  {
+    padding: 5px 5px 5px 5px;
+
+    color: red;
+  }
+  .col-md-4
+  {
+    display: block;
+    
+    background-color: white;
+    width:300px;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 40px;
+    border: 2px 
+    
+  }
+  .col-md-4 img{
+    max-width: 300px;
+  }
+  a{
+    text-decoration: none;
+  }
+  #fullhotel{
+    height: 200px; width: 100%;
+  }
+  .imghotel
+  {
+    width: 25%; float: left;
+  }
+  .detailhotel
+  {
+    width: 35%; float: left; height: 170px; padding-top: 10px; padding-left: 10px;
+  }
+  .pricehotel
+  {
+    width: 20%; float: left; height: 170px; padding-top: 10px; padding-left: 10px;
+  }
+  .price
+  {
+    font-size:20px;
+  }
